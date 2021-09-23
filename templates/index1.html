@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="geo.region" content="PE" />
+    <meta name="geo.placename" content="Lima" />
+    <meta name="DC.Language" scheme="RFC1766" content="Spanish" />
+    <meta name="DC.language" scheme="ISO639-1" content="es" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <link rel="apple-touch-icon" sizes="72x72" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="shortcut icon" href="/images/favicon-agentebitcoin.png" />
+	
+	<!-- estilos generales -->
+    <link rel="stylesheet" href="/css/global-style.css" />
+	
+    <title>Agente Bitcoin | Compra y Vende Bitcoin en Perú</title>
+    <meta name="description" content="Comprar y vender Bitcoin nunca ha sido tan fácil desde Perú, en Agente Bitcoin podrás realizar tus operaciones con mucha seguridad y confianza." />
+    <meta name="keywords" content="" />
+    
+    <!-- Facebook -->
+    <meta property="og:title" content="Agente Bitcoin | Compra y Vende Bitcoin en Perú">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://agentebitcoin.agenciaweb.pe/images/social/01inicio.jpg" />
+    <meta property="og:url" content="https://agentebitcoin.agenciaweb.pe/index1.html"> 
+    <meta property="og:description" content="Comprar y vender Bitcoin nunca ha sido tan fácil desde Perú, en Agente Bitcoin podrás realizar tus operaciones con mucha seguridad y confianza."> 
+	
+    <!-- Twitter -->
+    <meta name=”twitter:title” content="Agente Bitcoin | Compra y Vende Bitcoin en Perú">
+    <meta name=”twitter:card” content="summary with large image">
+    <meta name="twitter:image" content="https://agentebitcoin.agenciaweb.pe/images/social/01inicio.jpg">
+    <meta name="twitter:url" content="https://agentebitcoin.agenciaweb.pe/index1.html">
+    <meta name="twitter:description" content= "Comprar y vender Bitcoin nunca ha sido tan fácil desde Perú, en Agente Bitcoin podrás realizar tus operaciones con mucha seguridad y confianza.">
+	
+	<!-- Styles -->
+    <link rel="stylesheet" href="/css/landing-style.css" />
+    <link rel="stylesheet" href="/css/landing-responsive.css" />
+	
+    <!-- Script-FontAwesome -->
+    <script src="https://kit.fontawesome.com/660257203e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <p>{{ useragent }}</p>
+    <p>{{ urlBase }}</p>
+  
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/" title="inicio"><img src="/images/logo-agentebitcoin.svg" alt="Logo Agente Bitcoin" /></a>
+            </div>
+
+            <nav class="botonera" id="botonera">
+                <ul class="navegation">
+                    <li><a href="/acercade" title="Acerca de Agente Bitcoin">Acerca de</a></li>
+
+                    <li><a href="/soporte" title="Soporte">Soporte</a></li>
+
+                    <li><a href="/noticias" title="Noticias">Noticias</a></li>
+                </ul>
+
+                <ul class="register">
+                    <li><a href="#" id="login" title="Iniciar Sesión">Iniciar Sesión</a></li>
+
+                    <li>
+                        <a href="/registro" id="register" title="Registrarse">Registrarse</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+      </div>
+    </header>
+
+    <!-- POP UP DEL LOGIN -->
+
+    <div class="overlay" id="overlay">
+      <div class="popup-login" id="popup-login">
+        <a href="#" id="popup-close" title="Cerrar" class="popup-close">
+          <img src="images/close.svg" alt="Cerrar"/>
+    </a> 
+
+            <div class="form-login">
+            
+                            
+                            <form action="/login" method="POST">
+                                <h3>Iniciar Sesión</h3>
+                                <div class="datos-login-pop"> 
+                                    <div> 
+                                        <input class="email" type="email" id="correo-login" name="correo-login" placeholder="Correo Electrónico" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-correo"></p>
+                                    </div>
+                                    <div> 
+                                        <input class="password" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-contraseña"></p>
+                                    </div>
+                                </div>
+                                <div class="succes">
+                                    <input type="submit" id="aceptar-login" name="aceptar-login" value="Entrar" />
+
+                                    <a id="forget-password" href="#" title="olvide-contraseña">Olvidé mi contraseña</a>
+                                </div>
+
+                                <div class="opciones-login">
+                                    <a href="#" title="Inicia con Google"><img src="/images/login-google.png" alt="Google"/>Inicia con Google
+                                    </a>
+
+                                    <a href="#" title="Inicia con Facebook"><img src="/images/login-fb.png" alt="Facebook"/>Inicia con Facebook
+                                    </a>
+                                </div>
+
+                                <div class="register-option">
+                                    <div class="first">
+                                        <p>¿No tienes cuenta?</p>
+
+                                        <a href="/registro" title="Registrate aquí">Registrate aquí</a>
+                                    </div>
+
+                                    <p class="mini">2021 Agencia Bitcoin</p>
+                                </div>
+                            </form>
+            </div>
+        </div>
+        </div>
+
+        <!-- CAROUSEL ESTADOS DE BTC -->
+
+        <section class="carousel" style="display: none">
+            <div class="item">
+                <div class="title">
+                    <img src="/images/circle.svg" alt="circle" />
+
+                    <p>Bitcoin Cash (BCH)</p>
+                </div>
+
+                <div class="mount">
+                    <p>S/716,42 PEN</p>
+                </div>
+
+                <div class="description">
+                    <label>24h</label>
+
+                    <div class="status">
+                        <p>(4.26%)</p>
+
+                        <img src="/images/up.svg" alt="up" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    <img src="/images/circle.svg" alt="circle" />
+
+                    <p>Bitcoin Cash (BCH)</p>
+                </div>
+
+                <div class="mount">
+                    <p>S/716,42 PEN</p>
+                </div>
+
+                <div class="description">
+                    <label>24h</label>
+
+                    <div class="status">
+                        <p>(4.26%)</p>
+
+                        <img src="/images/up.svg" alt="up" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    <img src="/images/circle.svg" alt="circle" />
+
+                    <p>Bitcoin Cash (BCH)</p>
+                </div>
+
+                <div class="mount">
+                    <p>S/716,42 PEN</p>
+                </div>
+
+                <div class="description">
+                    <label>24h</label>
+
+                    <div class="status">
+                        <p>(4.26%)</p>
+
+                        <img src="/images/up.svg " alt="up" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    <img src="/images/circle.svg" alt="circle" />
+
+                    <p>Bitcoin Cash (BCH)</p>
+                </div>
+
+                <div class="mount">
+                    <p>S/716,42 PEN</p>
+                </div>
+
+                <div class="description">
+                    <label>24h</label>
+
+                    <div class="status">
+                        <p>(4.26%)</p>
+
+                        <img src="/images/up.svg" alt="up" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    <img src="/images/circle.svg" alt="circle" />
+
+                    <p>Bitcoin Cash (BCH)</p>
+                </div>
+
+                <div class="mount">
+                    <p>S/716,42 PEN</p>
+                </div>
+
+                <div class="description">
+                    <label>24h</label>
+
+                    <div class="status">
+                        <p>(4.26%)</p>
+
+                        <img src="/images/up.svg" alt="up" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <div class="start">
+                <h1>Compra Bitcoin y otras criptomonedas desde Perú</h1>
+
+                <p>
+                    Que no sea mas una preocupación la seguridad de tus datos y compras.
+                </p>
+
+                <button class="btn-start"><a href="/registro" title="Empezar">Empezar</a></button>
+            </div>
+
+            <div>
+                <img src="/images/banner-heather.png" />
+
+            </div>
+        </main>
+
+        <section class="respaldo">
+            <div class="card" id="card-left">
+                <img src="/images/tarifas.png" alt="tarifas" />
+
+                <h3>Tarifas</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="/images/atencion.png" alt="atencion 24/7" />
+
+                <h3>Atención 24/7</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="card" id="card-right">
+                <img src="/images/agentes-calificados.png" alt="agentes calificados" />
+
+                <h3>Agentes Altamente calificados</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mundo cripto -->
+
+        <section class="crypto-world">
+            <div class="content-crypto">
+                <div class="text">
+                    <h3>Accede hoy al Mundo Cripto</h3>
+
+                    <p>
+                        Disfruta comprar y vender activos digitales. Desde el año 2009, las criptomonedas han llegado para quedarse y cambiar nuestra forma de pensar, invertir y ahorrar.
+                    </p>
+
+                    <p>
+                        Nuestra plataforma es la más segura para almacenar, invertir, comprar y vender Bitcoin. Próximamente, también Ethereum, Litecoin y otras criptomonedas.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/images/mundo-cripto.png" alt="mundo cripto" />
+                </div>
+            </div>
+
+            <button class="btn-2">Empezar</button>
+        </section>
+
+        <!-- Caracteristicas -->
+
+        <section class="caracteristicas">
+            <div class="content-caract">
+                <h3>Características de Nuestra Plataforma</h3>
+
+                <div class="lista-caract">
+                    <div class="caract">
+                        <div><img src="/images/coin.svg " alt="icono de moneda" /></div>
+
+                        <div class="texto-caract">
+                            <h4>Múltiples Monedas</h4>
+
+                            <p>
+                                Bitcoin, Ethereum, Litecoin y muchas otras criptomonedas. Disfruta un catálogo actualizado las 24 horas del día, intercambia tus monedas en línea.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caract">
+                        <div><img src="/images/safe.svg" alt="Icono de seguridad" /></div>
+
+                        <div class="texto-caract">
+                            <h4>Acceso Fácil y Seguro</h4>
+
+                            <p>
+                                Brindamos un monedero privado y exclusivo para todas tus criptomonedas. Utilizamos los mecanismos de seguridad más reconocidos en la industria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caract">
+                        <div><img src="/images/car-shop.svg" alt="Icono de carrito de compra" /></div>
+
+                        <div class="texto-caract">
+                            <h4>Confianza</h4>
+
+                            <p>
+                                Agente Bitcoin tiene el respaldo de una empresa legalmente constituida. Al convertirte en un Agente Bitcoin formas parte del círculo de confianza que brinda nuestra plataforma.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caract">
+                        <img src="/images/security.svg" alt="Icono de seguridad" />
+
+                        <div class="texto-caract">
+                            <h4>Compra y Venta Express</h4>
+
+                            <p>
+                                ¿En un apuro? Ahora puedes comprar o vender tus criptomonedas y pagar o recibir dinero en tu moneda preferida y banco local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compra y vende -->
+
+        <section class="compra-vende">
+            <div class="img-responsive">
+                <img src="/images/computer-responsive.png" alt="Computadora" />
+            </div>
+
+            <div class="desc-compra-vende">
+                <h3>Compra y vende</h3>
+
+                <h3>Criptomonedas de forma</h3>
+
+                <h3 id="grande">Instantánea y Facil</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+
+        <section class="testimonios">
+            <div class="ntros-clientes">
+                <div><img src="/images/testimonio.svg" alt="Testimonios" /></div>
+
+                <div>
+                    <h3>Testimonios de nuestros <span id="grande-2">clientes</span></h3>
+                </div>
+            </div>
+
+            <div class="box-testimonios">
+                <div class="testimonio">
+                    <img src="/images/testi-1.png" alt="Testimonio" />
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <h4>Alejandra Espinoza</h4>
+                </div>
+
+                <div class="testimonio">
+                    <img src="/images/testi-2.png " alt="Testimonio" />
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <h4>Roberto Alvarez</h4>
+                </div>
+
+                <div class="testimonio">
+                    <img src="/images/testi-3.png " alt="Testimonio" />
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <h4>Juan Pérez</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+
+        <section class="preguntas-frecuentes">
+            <div class="preguntas">
+                <h3>Preguntas Frecuentes</h3>
+
+                <div class="pregunta active">
+                    <button class="btn-pregunta active">¿Qué es Bitcoin y porqué vale tanto?</button>
+                    <button class="border-collapse"></button>
+                    <div class="content-pregunta">
+                        <p>
+                            El Bitcoin, así como otras criptomonedas, constituyen la evolución natural del dinero en la sociedad. Desde los inicios de la historia, la humanidad ha creado mecanismos para representar valor para poder intercambiar productos y servicios. El trueque,
+                            semillas y granos, ganado, cuentas, pepitas de oro, plata, monedas de cobre acuñadas, notas y billetes, dinero emitido por Bancos Centrales, créditos, bonos, cheques, tarjetas de crédito, dinero electrónico y ahora las criptomonedas.
+                        </p>
+
+                        <p>
+                            Si bien la Banca apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera. Si bien la Banca
+                            apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera.
+                        </p>
+
+                        <p>
+                            El Valor del Bitcoin se basa en el esfuerzo requerido por miles de computadores a nivel mundial, que trabajan en la actualidad consumiendo una potencia única para poder procesar y verificar todas las transacciones, este consumo energético es lo que respalda
+                            a cada criptomoneda generada, puesto que toda la potencia de esta gigantesca red permite crear tan sólo 450 Bitcoins diarios. Asimismo, la poca disponibilidad de esta criptomoneda y su rápida adopción a lo largo del mundo la
+                            convierte cada vez en una moneda escasa, por lo que naturalmente, su valor se seguirá incrementando en el futuro próximo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pregunta">
+                    <button class="btn-pregunta">¿Qué rendimiento puedo esperar de una Inversión en Bitcoins?</button>
+                    <button class="border-collapse"></button>
+                    <div class="content-pregunta">
+                        <p>
+                            El Bitcoin, así como otras criptomonedas, constituyen la evolución natural del dinero en la sociedad. Desde los inicios de la historia, la humanidad ha creado mecanismos para representar valor para poder intercambiar productos y servicios. El trueque,
+                            semillas y granos, ganado, cuentas, pepitas de oro, plata, monedas de cobre acuñadas, notas y billetes, dinero emitido por Bancos Centrales, créditos, bonos, cheques, tarjetas de crédito, dinero electrónico y ahora las criptomonedas.
+                        </p>
+
+                        <p>
+                            Si bien la Banca apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera. Si bien la Banca
+                            apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera.
+                        </p>
+
+                        <p>
+                            El Valor del Bitcoin se basa en el esfuerzo requerido por miles de computadores a nivel mundial, que trabajan en la actualidad consumiendo una potencia única para poder procesar y verificar todas las transacciones, este consumo energético es lo que respalda
+                            a cada criptomoneda generada, puesto que toda la potencia de esta gigantesca red permite crear tan sólo 450 Bitcoins diarios. Asimismo, la poca disponibilidad de esta criptomoneda y su rápida adopción a lo largo del mundo la
+                            convierte cada vez en una moneda escasa, por lo que naturalmente, su valor se seguirá incrementando en el futuro próximo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pregunta">
+                    <button class="btn-pregunta">¿Qué necesito para empezar a Invertir?</button>
+                    <button class="border-collapse"></button>
+                    <div class="content-pregunta">
+                        <p>
+                            El Bitcoin, así como otras criptomonedas, constituyen la evolución natural del dinero en la sociedad. Desde los inicios de la historia, la humanidad ha creado mecanismos para representar valor para poder intercambiar productos y servicios. El trueque,
+                            semillas y granos, ganado, cuentas, pepitas de oro, plata, monedas de cobre acuñadas, notas y billetes, dinero emitido por Bancos Centrales, créditos, bonos, cheques, tarjetas de crédito, dinero electrónico y ahora las criptomonedas.
+                        </p>
+
+                        <p>
+                            Si bien la Banca apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera. Si bien la Banca
+                            apareció como una solución para llevar el registro de titularidad de cuentas, así como el balance y la disponibilidad del valor a nivel nacional o internacional, estos servicios se vuelven innecesarios con el uso de las criptomonedas;
+                            puesto que la red Internet y los métodos de seguridad avanzados que están detrás de esta tecnología se convierten en la plataforma más segura, disponible y económica para todo tipo de operación financiera.
+                        </p>
+
+                        <p>
+                            El Valor del Bitcoin se basa en el esfuerzo requerido por miles de computadores a nivel mundial, que trabajan en la actualidad consumiendo una potencia única para poder procesar y verificar todas las transacciones, este consumo energético es lo que respalda
+                            a cada criptomoneda generada, puesto que toda la potencia de esta gigantesca red permite crear tan sólo 450 Bitcoins diarios. Asimismo, la poca disponibilidad de esta criptomoneda y su rápida adopción a lo largo del mundo la
+                            convierte cada vez en una moneda escasa, por lo que naturalmente, su valor se seguirá incrementando en el futuro próximo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contactanos -->
+
+        <section class="contactanos">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3380899469116!2d-77.01496938457491!3d-12.088991445980296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c87f224e80bb%3A0xb5fb52b841907c29!2sAv.%20Javier%20Prado%20Este%201405%2C%20La%20Victoria%2015034!5e0!3m2!1ses-419!2spe!4v1624487220322!5m2!1ses-419!2spe "
+                    style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="formulario">
+                <h3>Contáctanos</h3>
+
+                <form action="/php/contacto-db.html" method="POST">
+                    <div class="names">
+                        <div>
+                            <label for="nombres">Nombre(s):</label>
+
+                            <input id="nombres" name="nombres" type="text" placeholder="Ingrese sus nombres" required/>
+                        </div>
+
+                        <div>
+                            <label for="apellidos">Apellido(s):</label>
+
+                            <input id="apellidos" name="apellidos" type="text" placeholder="Ingrese sus nombres" required/>
+                        </div>
+                    </div>
+
+                    <div class="mail-phone">
+                        <div>
+                            <label for="correo">Email:</label>
+
+                            <input id="correo" name="correo" type="email" placeholder="Ingrese su mail" required/>
+                        </div>
+
+                        <div>
+                            <label for="celular">Celular:</label>
+
+                            <input id="celular" name="celular" type="cel" placeholder="Ingrese su celular" minlength="9" maxlength="9" required/>
+                        </div>
+                    </div>
+
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+
+                    <input id="enviar-mensaje" id="enviar-mensaje" type="submit" value="Enviar mensaje" />
+                    <input type="hidden" name="origen" id="origen" value="0">
+                    <div>
+                        <p id="alerta"></p>
+                        <p id="bad-alerta"></p>
+                    </div> 
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="about-footer">
+                <img class="logo-footer" src="/images/agentebitcoin.png" alt="Agente Bitcoin" />
+
+                <p>
+                    Somos un conglomerado de agentes encargados de difundir y facilitar la Compra y Venta de criptomonedas en el Perú y Latinoamérica. Únete a nosotros y gana comisión en todas tus transacciones. Tu dinero está siempre protegido y las ganancias garantizadas.
+                </p>
+
+                <div class="iconos">
+                    <img src="/images/facebook.png" alt="Facebook" />
+
+                    <img src="/images/twitter.png" alt="Twitter" />
+
+                    <img src="/images/linkdin.png" alt="Linkdin" />
+
+                    <img src="/images/youtube.png" alt="Youtube" />
+                </div>
+            </div>
+
+            <div class="contacto">
+                <ul>
+                    <li class="head-li">
+                        <img src="/images/ic-celular.png " alt="Icono de celular" />Contacto
+                    </li>
+
+                    <li class="li-child">+51 998 308 759</li>
+
+                    <li class="li-child">+51 933 619 476</li>
+                </ul>
+
+                <ul>
+                    <li class="head-li">
+                        <img src="/images/ic-ubicación.png " alt="Icono de ubicación" /> Dirección
+                    </li>
+
+                    <li class="li-child">Calle Cuarenta 190, San Isidro, Lima, Perú</li>
+                </ul>
+            </div>
+
+            <!-- Linea sepadadora -->
+
+            <div class="line"></div>
+
+            <!-- Linea sepadadora -->
+
+            <div class="terminos">
+                <ul>
+                    <li>
+                        <a href="/aviso-legal" title="Términos y condiciones">Términos y condiciones</a>
+                    </li>
+
+                    <li>
+                        <a href="/aviso-legal/politicas-de-privacidad" title="Politicas de privacidad">Políticas de privacidad</a
+            >
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Linea sepadadora -->
+
+      <div class="line"></div>
+
+      <!-- Linea sepadadora -->
+
+      <div class="horarios">
+        <ul>
+          <li class="head-li">
+            <img src="/images/ic-horarios.png " alt="Icono de horario " />
+
+            <p>
+              Horario de <br />
+              Oficina
+            </p>
+          </li>
+
+          <li class="li-child"><span>L-V</span> 9am a 5pm</li>
+
+          <li class="li-child"><span>Sáb</span> 9am a 1pm</li>
+
+          <li id="tiny">2021 Agente bitcoin</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- PHP -->
+    <?php 
+    include("/php/contacto-db.php");
+    include("/php/validacion-login.php");
+    ?>
+    <!-- SCRIPTS -->
+    <script src="/js/app.js"></script>
+    <!-- PHP -->
+    <?php include ("/php/validacion-login.php") ?>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+    @media screen and (max-width: 1440px) {
+        .plataforma-dinero,
+        .detalles-recarga {
+            width: 450px;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .plataforma-dinero {
+            height: auto;
+        }
+        .detalles-recarga {
+            display: none;
+        }
+        .detalles-recarga-responsive {
+            display: block;
+            padding-top: 20px;
+        }
+        .detalles-recarga-responsive .detalles {
+            border-bottom: solid 1px #F0F0F0;
+        }
+        .detalles-recarga-responsive .detalle {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            align-items: center;
+        }
+        .detalles-recarga-responsive .detalle .dato {
+            font-family: Montserrat-regular;
+        }
+        .cargar-saldo .cargar {
+            display: none;
+        }
+        .plataforma-dinero,
+        .detalles-recarga {
+            width: 80%;
+            margin: auto;
+        }
+        .cargar-saldo .cargar-responsive {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .cargar-saldo .cargar-responsive a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background: #127BF5;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .plataforma-dinero,
+        .detalles-recarga {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width: 550px) {
+        .plataforma-dinero,
+        .detalles-recarga {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        #plataforma {
+            font-size: 12px;
+        }
+        .plataforma-dinero {
+            padding: 20px 10px;
+        }
+        .detalles-recarga-responsive p {
+            font-size: 14px;
+        }
+        .detalles-recarga-responsive .detalles .detalle .dato {
+            font-size: 13px;
+        }
+        .plataforma-dinero .plataforma {
+            gap: 0;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .aviso-detalles a {
+            font-size: 14px;
+        }
+    }

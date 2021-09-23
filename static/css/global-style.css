@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Cabin;
+    src: url('../fonts/Cabin/Cabin-Regular.ttf');
+}
+
+@font-face {
+    font-family: Cabin-semibold;
+    src: url('../fonts/Cabin/Cabin-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Cabin-medium;
+    src: url('../fonts/Cabin/Cabin-Medium.ttf');
+}
+
+
+/* Montserrat */
+
+@font-face {
+    font-family: Montserrat-light;
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-regular;
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-medium;
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+html {
+    font-family: 'Cabin';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

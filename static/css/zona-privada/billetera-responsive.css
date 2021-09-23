@@ -1,0 +1,72 @@
+        @media screen and (max-width: 1440px) {
+            .billetera {
+                width: 49%;
+            }
+            .new-billetera-block {
+                width: 49%;
+            }
+        }
+        
+        @media screen and (max-width: 1132px) {
+            .billetera .acciones-billetera a {
+                padding: 5px 10px;
+            }
+            .content-billetera {
+                padding: 20px 10px;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .billeteras {
+                flex-direction: column;
+                align-items: center;
+            }
+            .billetera {
+                width: 80%;
+            }
+            .new-billetera-block {
+                width: 80%;
+            }
+            .billetera .acciones-billetera a {
+                padding: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .billetera {
+                width: 100%;
+            }
+            .new-billetera-block {
+                width: 100%;
+            }
+            .billetera .saldo-bitcoin {
+                width: 250px;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .billetera .acciones-billetera {
+                flex-wrap: wrap;
+                gap: 0;
+                justify-content: space-evenly;
+            }
+            .billetera .acciones-billetera a {
+                padding: 10px;
+                margin: 7px;
+            }
+            .billetera .detalle-billetera .detalle {
+                width: 130px;
+            }
+            .new-billetera-block {
+                height: 200px;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            .billetera .saldo-bitcoin {
+                width: 230px;
+            }
+            .billetera .detalle-billetera .detalle {
+                width: auto;
+            }
+        }

@@ -1,0 +1,171 @@
+.cuenta-section {
+    width: 90%;
+    margin: auto;
+}
+
+.cuenta-section .titulo-cuenta {
+    padding: 20px 0;
+    border-bottom: 1px solid #ffcc7e;
+}
+
+.cuenta-section h1 {
+    font-family: Montserrat-medium;
+    color: #127bf5;
+    font-size: 25px;
+}
+
+.nueva-cuenta a {
+    padding: 10px;
+    text-decoration: none;
+    color: #4f647d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    width: 260px;
+    margin-top: 20px;
+}
+
+.cuenta {
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #4F647D;
+    margin: 20px 0;
+}
+
+.cuenta h2 {
+    margin-bottom: 25px;
+}
+
+.info-titular .nombres .nombre {
+    font-family: Montserrat-regular;
+    margin-top: 10px;
+}
+
+.info-titular .documento {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+.info-titular .documento select {
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 5px;
+    color: #4F647D;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 10px;
+    font-family: Montserrat-regular;
+}
+
+.info-titular .documento .numero .nro-doc {
+    margin-top: 10px;
+    padding: 5px 0;
+    font-family: Montserrat-regular;
+}
+
+.info-cuenta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones-cuenta-responsive {
+    display: none;
+}
+
+.opciones-cuenta {
+    display: flex;
+    gap: 20px;
+}
+
+.opciones-cuenta a {
+    text-decoration: none;
+    color: #4F647D;
+    border: 0.8px solid #8F8F8F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.line-separator {
+    border-left: 1px solid #e5e5e5;
+    height: auto;
+}
+
+
+/* banco */
+
+.info-banco .banco form {
+    margin: 30px 0;
+}
+
+.info-banco .banco form div {
+    padding: 10px 30px;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-banco .banco form div select {
+    background: #FFF;
+    font-family: Montserrat-regular;
+    border: 0;
+    margin-left: 10px;
+    color: #4F647D;
+}
+
+.info-banco .banco form div select option {
+    font-family: Montserrat-regular;
+}
+
+.info-banco .nro-cuenta,
+.info-banco .tipo-moneda {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-banco .tipo-moneda {
+    margin: 25px 0;
+}
+
+.info-banco .tipo-moneda .moneda {
+    text-align: start;
+    margin-right: 85px;
+}
+
+
+/* NEW BLOCK CUENTA */
+
+.nueva-cuenta-block {
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #4F647D;
+    margin: 20px 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nueva-cuenta-block img {
+    width: 60px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión en Agente Bitcoin | Compra y Vende Bitcoin en Perú</title>
+    <meta name="description" content="Inicia Sesión en Agente Bitcoin. Comienza a comprar y vender Bitcoins con mucha seguridad y confianza desde Perú." />
+    <meta name="keywords" content="" />
+    <meta name="geo.region" content="PE" />
+    <meta name="geo.placename" content="Lima" />
+    <meta name="DC.Language" scheme="RFC1766" content="Spanish" />
+    <meta name="DC.language" scheme="ISO639-1" content="es" />
+
+    <!-- OpenGraph -->
+    <!-- Facebook -->
+    <meta property="og:title" content="Iniciar sesión | Agente Bitcoin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://agentebitcoin.agenciaweb.pe/images/social/08Iniciar-sesion.jpg" />
+    <meta property="og:url" content="https://agentebitcoin.agenciaweb.pe/iniciar-sesion.html"> 
+    <meta property="og:description" content="Inicia Sesión en Agente Bitcoin. Comienza a comprar y vender Bitcoins con mucha seguridad y confianza desde Perú."> 
+    <!-- Twitter -->
+    <meta name=”twitter:title” content="Iniciar sesión | Agente Bitcoin">
+    <meta name=”twitter:card” content="summary with large image">
+    <meta name="twitter:image" content="https://agentebitcoin.agenciaweb.pe/images/social/08Iniciar-sesion.jpg">
+    <meta name="twitter:url" content="https://agentebitcoin.agenciaweb.pe/iniciar-sesion.html">
+    <meta name="twitter:description" content="Inicia Sesión en Agente Bitcoin. Comienza a comprar y vender Bitcoins con mucha seguridad y confianza desde Perú.">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <link rel="apple-touch-icon" sizes="72x72" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="shortcut icon" href="/images/favicon-agentebitcoin.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/global-style.css">
+
+    <link rel="stylesheet" href="/css/landing-style.css">
+
+    <link rel="stylesheet" href="/css/landing-responsive.css">
+
+    <link rel="stylesheet" href="/css/login-page.css">
+
+    <link rel="stylesheet" href="/css/login-responsive.css">
+
+    <!-- Script-FontAwesome -->
+
+    <script src="https://kit.fontawesome.com/660257203e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+
+                <a href="/" title="Inicio"><img src="/images/logo-agentebitcoin.svg" alt="Logo Agente Bitcoin" /></a>
+
+            </div>
+
+
+
+            <nav class="botonera" id="botonera">
+
+                <ul class="navegation">
+
+                    <li><a href="/acerca" title="Acerca de Agente Bitcoin">Acerca de</a></li>
+
+                    <li><a href="/soporte" title="Soporte">Soporte</a></li>
+
+                    <li><a href="/noticias" title="Noticias">Noticias</a></li>
+
+                </ul>
+
+
+
+                <ul class="register">
+
+                    <li><a href="#" id="login" title="Iniciar Sesion">Iniciar Sesion</a></li>
+
+                    <li>
+
+                        <a href="/registro" id="register" title="Registrarse">Registrarse</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Login -->
+
+
+
+    <div class="login-space-apart">
+
+        <div class="image"><img src="/images/il-inicio-sesión.png" alt="Bitcoin"></div>
+
+        <div class="form-login-apart">
+            {% block content %}
+            <div class="container">
+                {% for message in get_flashed_messages() %}
+                <div class="alert alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+                {% endfor %}
+            
+                {% block page_content %}{% endblock %}
+            </div>
+            {% endblock %}
+  
+            <form action="#" method="POST">
+
+                <h3>Iniciar Sesión</h3>
+                <div class="login-datos"> 
+                    <div> 
+                        <input class="email" type="email" id="correo-login" name="correo-login" placeholder="Correo Electrónico">
+                        <!-- Alerta validación -->
+                        <p class="alert" style="display: none;" id="alert-correo"></p>
+                    </div>
+                    <div> 
+                        <input class="password" type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+                        <!-- Alerta validación -->
+                        <p class="alert" style="display: none;" id="alert-contraseña"></p>
+                    </div>
+                </div>
+                <div class="succes">
+
+                    <input type="submit" id="aceptar-login" name="aceptar-login" value="Entrar">
+
+                    <a id="forget-password" title="Olvidé mi contraseña" href="#">Olvidé mi contraseña</a>
+
+                </div>
+
+                <div class="opciones-login">
+
+                    <a href="#" title="Inicia con Google"><img src="/images/login-google.png" alt="Google">Inicia con Google</a>
+
+                    <a href="#" title="Inicia con Facebook"><img src="/images/login-fb.png" alt="Facebook">Inicia con Facebook</a>
+
+                </div>
+
+                <div class="register-option-2">
+
+                    <div>
+
+                        <p>¿No tienes cuenta?</p>
+
+                        <a href="/registro" title="Registrate aquí">Registrate aquí</a>
+
+                    </div>
+                    <div>
+                        <p class="mini">2021 Agencia Bitcoin</p>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+<!-- SCRIPTS -->
+
+<script src="/js/inicia-sesion.js"></script>
+<!-- PHP -->
+<?php include ("/php/validacion-login.php") ?>
+</html>

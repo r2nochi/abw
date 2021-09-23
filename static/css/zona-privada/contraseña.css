@@ -1,0 +1,97 @@
+header{
+    padding: 50px;
+}
+.contraseña{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: 50px auto;
+}
+.recomendaciones,
+.formulario-cambio{
+width: 500px;
+color: #4F647D;
+}
+
+.recomendaciones h1{
+    margin: 20px 0;
+    color: #127BF5;
+    font-size: 30px;
+}
+.recomendaciones ul{
+    margin: 20px 0;
+    margin-left: 30px;
+}
+.recomendaciones ul li{
+    margin-bottom: 10px;
+}
+.formulario-cambio form div{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    font-size: 18px;
+    color: #4F647D;
+    font-family: Cabin;
+}
+
+.formulario-cambio form div input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 15px 0;
+    margin-top: 5px;
+}
+.formulario-cambio #confirmar{
+    padding: 10px 25px;
+    background: linear-gradient(26.7deg, #26378E 7.77%, #127BF5 81.36%);
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1440px) {
+    .recomendaciones,
+    .formulario-cambio{
+    width: 470px;
+    color: #4F647D;
+    }
+}
+
+@media screen and (max-width: 1067px){
+    .recomendaciones,
+    .formulario-cambio{
+    width: 95%;
+    }
+    .contraseña{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+    header {
+        padding: 20px 80px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .formulario-cambio form div input{
+        padding: 10px 0;
+    }
+    header{
+        padding:20px 0;
+    }
+    .contraseña{
+        width: 95%;
+    }
+    h1{
+        text-align: center;
+    }
+    .formulario-cambio #confirmar{
+        display: block;
+        margin: auto;
+    }
+}

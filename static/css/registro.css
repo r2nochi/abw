@@ -1,0 +1,169 @@
+/* REGISTER POP-UP */
+
+.registro-space {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 50px;
+}
+
+.line-2 {
+    border-left: 1px solid #C4C4C4;
+    height: 400px
+}
+
+.terminos-registro {
+    width: 600px;
+    font-family: Montserrat-regular;
+    color: #8F8F8F;
+    font-size: 14px;
+    padding: 0 20px
+}
+
+.registro-space .terminos-registro div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.terminos-registro input {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.terminos-registro h3 {
+    color: #127BF5;
+    font-size: 30px;
+    font-family: Cabin-semibold;
+    margin-bottom: 30px
+}
+
+.register-form {
+    background: #FFFFFF;
+    width: 600px;
+    padding: 0 20px
+}
+
+.opciones-register {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #4F647D;
+}
+
+.register-form .confirmacion {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.aceptar-condiciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.clausulas {
+    display: none;
+}
+
+.register-form .aceptar-condiciones div {
+    display: flex;
+}
+
+.aceptar-condiciones input {
+    width: 20px;
+}
+
+.register-form h3 {
+    color: #127BF5;
+    font-size: 30px;
+    font-family: Cabin-semibold;
+    margin-bottom: 20px
+}
+
+.popup-close img {
+    width: 35px;
+}
+
+.popup-close {
+    display: block;
+    text-align: right;
+}
+
+.register-form form {
+    width: 95%;
+    margin: auto;
+}
+
+.register-form .input-register input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 18px;
+    font-family: Montserrat-medium;
+}
+
+.input-register #repeat-pass {
+    margin: 0;
+}
+
+.alert {
+    margin: 10px 0;
+    font-family: Montserrat-medium;
+    font-size: 12px;
+    color:  #FF0000;
+}
+
+.confirmacion #aceptar-register {
+    width: 120px;
+    padding: 10px;
+    display: block;
+    background: linear-gradient(26.7deg, #26378E 7.77%, #127BF5 81.36%);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    font-weight: Cabin-semibold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register-form .aceptar-condiciones p {
+    font-family: Montserrat-medium;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8F8F8F;
+    margin-left: 10px;
+}
+
+.register-form .aceptar-condiciones a {
+    margin-left: 5px;
+    color: #127BF5;
+}
+
+.login-option {
+    text-align: center;
+}
+
+.login-option p {
+    font-size: 16px;
+    font-family: Cabin;
+    margin-bottom: 10px;
+}
+
+.login-option a {
+    font-size: 16px;
+    font-family: Montserrat-medium;
+    color: #127BF5;
+}
+
+.author {
+    text-align: center;
+    font-size: 10px;
+    font-family: Montserrat-medium;
+    color: #4F647D;
+}

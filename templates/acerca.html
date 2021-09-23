@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agente Bitcoin es una plataforma donde podrás comprar y vender Bitcoins con mucha seguridad y confianza desde Perú.">
+    <!-- OpenGraph -->
+    <!-- Facebook -->
+    <meta property="og:title" content="Conoce más acerca de nosotros | Agente Bitcoin ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://agentebitcoin.agenciaweb.pe/images/social/02acercade.jpg" />
+    <meta property="og:url" content="https://agentebitcoin.agenciaweb.pe/acerca.php"> 
+    <meta property="og:description" content="Agente Bitcoin es una plataforma donde podrás comprar y vender Bitcoins con mucha seguridad y confianza desde Perú."> 
+    <!-- Twitter -->
+    <meta name=”twitter:title” content="Conoce más acerca de nosotros | Agente Bitcoin">
+    <meta name=”twitter:card” content="summary with large image">
+    <meta name="twitter:image" content="https://agentebitcoin.agenciaweb.pe/images/social/02acercade.jpg">
+    <meta name="twitter:url" content="https://agentebitcoin.agenciaweb.pe/acerca.php">
+    <meta name="twitter:description" content="Agente Bitcoin es una plataforma donde podrás comprar y vender Bitcoins con mucha seguridad y confianza desde Perú.">
+    <title>Acerca de Agente Bitcoin | Compra y Vende Bitcoin en Perú</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <link rel="apple-touch-icon" sizes="72x72" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="shortcut icon" href="/images/favicon-agentebitcoin.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/global-style.css">
+    <link rel="stylesheet" href="/css/acerca.css">
+    <!-- About-css -->
+    <link rel="stylesheet" href="/css/acerca-de/header-about.css">
+    <link rel="stylesheet" href="/css/acerca-de/pop-up.css">
+    <link rel="stylesheet" href="/css/acerca-de/footer-about.css">
+    <link rel="stylesheet" href="/css/acerca-de/style.css">
+    <link rel="stylesheet" href="/css/acerca-de/responsive.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/css/acerca-de/bootstrap.min.css">
+    <!-- Script-FontAwesome -->
+    <script src="https://kit.fontawesome.com/660257203e.js " crossorigin="anonymous "></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container-header">
+
+            <div class="logo">
+                <a href="/" title="inicio"><img src="/images/logo-agentebitcoin.svg" alt="Logo Agente Bitcoin" /></a>
+            </div>
+
+            <nav class="botonera" id="botonera">
+                <ul class="navegation">
+
+                    <li><a href="#" title="Acerca de Agente Bitcoin" id="selected">Acerca de</a></li>
+                    <li><a href="/soporte" title="Soporte">Soporte</a></li>
+                    <li><a href="/noticias" title="Noticias">Noticias</a></li>
+                </ul>
+
+                <ul class="register">
+                    <li><a href="#" id="login" title="Iniciar Sesion">Iniciar Sesion</a></li>
+                    <li><a href="/registro" id="register" title="Registrarse">Registrarse</a></li>
+                </ul>
+            </nav>
+
+            <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+    </header>
+    <!-- POP UP DEL LOGIN -->
+
+    <div class="overlay" id="overlay">
+      <div class="popup-login" id="popup-login">
+        <a href="#" id="popup-close" title="Cerrar" class="popup-close">
+          <img src="/images/close.svg" alt="Cerrar"
+        /></a> 
+
+            <div class="form-login">
+                            <form action="/login" method="POST">
+                                <h3>Iniciar Sesión</h3>
+                                <div class="datos-login-pop"> 
+                                    <div> 
+                                        <input class="email" type="email" id="correo-login" name="correo-login" placeholder="Correo Electrónico" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-correo"></p>
+                                    </div>
+                                    <div> 
+                                        <input class="password" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-contraseña"></p>
+                                    </div>
+                                </div>
+                                <div class="succes">
+                                    <input type="submit" id="aceptar-login" name="aceptar-login" value="Entrar" />
+
+                                    <a id="forget-password" href="#" title="olvide-contraseña">Olvidé mi contraseña</a>
+                                </div>
+
+                                <div class="opciones-login">
+                                    <a href="#" title="Inicia con Google"><img src="/images/login-google.png" alt="Google" />Inicia con Google
+                                    </a>
+
+                                    <a href="#" title="Inicia con Facebook"><img src="/images/login-fb.png" alt="Facebook" />Inicia con Facebook
+                                    </a>
+                                </div>
+
+                                <div class="register-option">
+                                    <div class="first">
+                                        <p>¿No tienes cuenta?</p>
+
+                                        <a href="/registro" title="Registrate aquí">Registrate aquí</a>
+                                    </div>
+
+                                    <p class="mini">2021 Agencia Bitcoin</p>
+                                </div>
+                            </form>
+            </div>
+        </div>
+        </div>
+    <!-- Acerca de -->
+    <section class="acerca-container">
+        <ul>
+            <li><a href="/" title="Inicio">Inicio</a></li>
+
+            <li><a class="noline" href="#">></a></li>
+
+            <li><a class="noline" href="/acercade" title="Acerca de Agente Bitcoin">Acerca de</a></li>
+
+        </ul>
+        <div class="acerca">
+            <h1>Acerca de Agente Bitcoin</h1>
+            <!-- Codigo template -->
+            <!-- featured-Area Start-->
+            <div class="featured-area pd-top-100 ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-xl-5 offset-xl-1 col-lg-5 align-self-center align-self-xl-start d-none d-lg-block ">
+                            <div class="thumb me-5 span3 wow rollIn">
+                                <img src="/images/acerca-de/1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-8 col-md-10 col-sm-11">
+                            <div class="section-title">
+                                <h2 class="title ">ApeTech Features</h2>
+                                <p>Delay rapid joy share allow age manor six. Went why far saw many knew. Exquisite excellent son gentleman acuteness her.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="single-featured-wrap">
+                                        <div class="thumb">
+                                            <img src="/images/acerca-de/1i.png" alt="img">
+                                        </div>
+                                        <div class="featured-wrap-details">
+                                            <h4>User Friendly</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="single-featured-wrap">
+                                        <div class="thumb">
+                                            <img src="/images/acerca-de/2i.png" alt="img">
+                                        </div>
+                                        <div class="featured-wrap-details">
+                                            <h4>Super Fast Speed</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="single-featured-wrap ">
+                                        <div class="thumb ">
+                                            <img src="/images/acerca-de/3i.png" alt="img">
+                                        </div>
+                                        <div class="featured-wrap-details ">
+                                            <h4>Awesome Rating</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="single-featured-wrap ">
+                                        <div class="thumb ">
+                                            <img src="/images/acerca-de/4i.png" alt="img">
+                                        </div>
+                                        <div class="featured-wrap-details">
+                                            <h4>Award Winning</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="single-featured-wrap d-1400-none display-lg-block ">
+                                        <div class="thumb ">
+                                            <img src="/images/acerca-de/5i.png " alt="img ">
+                                        </div>
+                                        <div class="featured-wrap-details ">
+                                            <h4>Users Forum</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="single-featured-wrap d-1400-none display-lg-block ">
+                                        <div class="thumb ">
+                                            <img src="/images/acerca-de/6i.png " alt="img ">
+                                        </div>
+                                        <div class="featured-wrap-details ">
+                                            <h4>24/7 Support</h4>
+                                            <p>Led all cottage met enabled attempt through talking delight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- featured-Area End-->
+
+
+            <!-- upcoming-featured-Area Start-->
+            <div class="upcoming-featured-area pd-top-120 pd-bottom-120 ">
+                <div class="container-fluid ">
+                    <div class="row justify-content-center ">
+                        <div class="col-xl-5 offset-md-1 col-md-6 col-sm-10 align-self-center ">
+                            <div class="ps-5 ms-5 ">
+                                <div class="section-title ">
+                                    <h2 class="title ">Available Soon</h2>
+                                    <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at. Situation</p>
+                                </div>
+                                <ul class="pl-list-inner style-1 ">
+                                    <li><i class="fa fa-check "></i>Pro features coming soon ...</li>
+                                    <li><i class="fa fa-check "></i>Personalized inbox</li>
+                                    <li><i class="fa fa-check "></i>Bookmark links</li>
+                                    <li><i class="fa fa-check "></i>Browse by category</li>
+                                    <li><i class="fa fa-check "></i>Search through archives</li>
+                                    <li><i class="fa fa-check "></i>Dark version available soon</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 d-none d-md-block align-self-center ">
+                            <div class="thumb me-5 span3 wow rollInRight">
+                                <img src="/images/acerca-de/2.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- upcoming-featured-Area End-->
+
+            <!-- intro-Area Start-->
+            <div class="intro-area text-center pd-bottom-100 ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-3 col-sm-6 ">
+                            <div class="single-intro-wrap ">
+                                <div class="thumb ">
+                                    <img src="/images/acerca-de/2a.png" alt="img">
+                                </div>
+                                <h4><a href="#">Basic Info</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <div class="single-intro-wrap ">
+                                <div class="thumb ">
+                                    <img src="/images/acerca-de/2b.png" alt="img">
+                                </div>
+                                <h4><a href="#">Display</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <div class="single-intro-wrap ">
+                                <div class="thumb ">
+                                    <img src="/images/acerca-de/2c.png" alt="img">
+                                </div>
+                                <h4><a href="#">System</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <div class="single-intro-wrap ">
+                                <div class="thumb ">
+                                    <img src="/images/acerca-de/2d.png" alt="img">
+                                </div>
+                                <h4><a href="#">Fonts</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- intro-Area End-->
+
+            <!-- video-Area start-->
+            <div class="video-area text-center pd-bottom-120 mt-ng-105" style="background: url(img/other/2.png);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 col-md-10">
+                            <div class="section-title mb-0 pb-5 text-center">
+                                <h2 class="title">Description With Video</h2>
+                                <p>Delay rapid joy share allow age manor six. Went why far saw many knew. Exquisite excellent son gentleman acuteness her.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-11">
+                            <div class="video-inner">
+                                <img src="/images/acerca-de/video.png" alt="img">
+                                <a class="play-btn" href="https://www.youtube.com/embed/Wimkqo8gDZ0" data-effect="mfp-zoom-in"><img src="/images/acerca-de/play.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- video-Area End-->
+
+
+            <!-- network-Area Start-->
+            <div class="network-area pd-top-140">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5 col-lg-6 col-md-8 d-none d-md-block align-self-end">
+                            <div class="thumb me-5 span3 wow rollIn">
+                                <img src="/images/acerca-de/3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-8 col-sm-10 align-self-center">
+                            <div class="section-title mb-0 pb-5 text-center text-lg-start">
+                                <h2 class="title">Its Easily Work With Faster Wireless 5G Network</h2>
+                                <p>Delay rapid joy share allow age manor six. Went why far saw many. On disposal of as landlord horrible. Afraid at highly months do.</p>
+                            </div>
+                            <ul class="pl-list-inner style-1 text-center text-lg-start">
+                                <li><i class="fa fa-check"></i>Delay rapid joy share allow age manor six.</li>
+                                <li><i class="fa fa-check"></i>Exquisite excellent son gentleman acuteness her.</li>
+                                <li><i class="fa fa-check"></i>Went why far saw many knew.</li>
+                                <li><i class="fa fa-check"></i>Friendly as stronger speedily by recurred.</li>
+                                <li><i class="fa fa-check"></i>Son interest wandered sir addition end say.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 d-none d-xl-block align-self-end">
+                            <div class="thumb span3 wow rollInRight">
+                                <img src="/images/acerca-de/other.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- network-Area End-->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer style="background-image: url(/images/footer-banner.png)">
+        <div class="about-footer ">
+            <img class="logo-footer " src="/images/agentebitcoin.png" alt="Agente Bitcoin" />
+
+            <p>
+                Somos un conglomerado de agentes encargados de difundir y facilitar la Compra y Venta de criptomonedas en el Perú y Latinoamérica. Únete a nosotros y gana comisión en todas tus transacciones. Tu dinero está siempre protegido y las ganancias garantizadas.
+            </p>
+
+            <div class="iconos ">
+                <img src="/images/facebook.png" alt="Facebook" />
+
+                <img src="/images/twitter.png" alt="Twitter" />
+
+                <img src="/images/linkdin.png" alt="Linkdin" />
+
+                <img src="/images/youtube.png" alt="Youtube" />
+            </div>
+        </div>
+
+        <div class="contacto ">
+            <ul>
+                <li class="head-li ">
+                    <img src="/images/ic-celular.png " alt="Icono de celular"/>Contacto
+                </li>
+
+                <li class="li-child ">+51 998 308 759</li>
+
+                <li class="li-child ">+51 933 619 476</li>
+            </ul>
+
+            <ul>
+                <li class="head-li ">
+                    <img src="/images/ic-ubicación.png " alt="Icono de ubicación"/> Dirección
+                </li>
+
+                <li class="li-child ">Calle Cuarenta 190, San Isidro, Lima, Perú</li>
+            </ul>
+        </div>
+
+        <!-- Linea sepadadora -->
+
+        <div class="line "></div>
+
+        <!-- Linea sepadadora -->
+
+        <div class="terminos ">
+            <ul>
+                <li>
+                    <a href="/aviso-legal" title="Términos y condiciones">Términos y condiciones</a>
+                </li>
+
+                <li>
+                    <a href="/aviso-legal/politicas-de-privacidad" title="Políticas de privacidad">Políticas de privacidad</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Linea sepadadora -->
+
+  <div class="line"></div>
+
+  <!-- Linea sepadadora -->
+
+  <div class="horarios">
+    <ul>
+      <li class="head-li">
+        <img src="/images/ic-horarios.png " alt="Icono horario " />
+
+        <p>
+          Horario de <br />
+          Oficina
+        </p>
+      </li>
+
+      <li class="li-child "><span>L-V</span> 9am a 5pm</li>
+
+      <li class="li-child "><span>Sáb</span> 9am a 1pm</li>
+
+      <li id="tiny ">2021 Agente bitcoin</li>
+    </ul>
+  </div>
+</footer>
+    <!-- scripts Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Local-script -->
+    <script src="/js/app.js"></script>
+    <!-- PHP -->
+    <?php include ("/php/validacion-login.php") ?>
+</body>
+
+</html>

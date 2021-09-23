@@ -1,0 +1,99 @@
+@media screen and (min-width: 1700px) {
+    .registro-space {
+        gap: 100px;
+        margin: 120px auto;
+    }
+    .terminos-registro {
+        width: 700px;
+    }
+    .register-form {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .terminos-registro {
+        width: 500px;
+    }
+    .register-form {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .registro-space {
+        gap: 20px;
+    }
+    .register-form {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .line-2 {
+        display: none;
+    }
+    .registro-space {
+        margin: 40px 0;
+        flex-wrap: wrap-reverse;
+    }
+    .opciones-register {
+        width: 100%;
+    }
+    .register-form {
+        width: 90%;
+        margin: auto;
+    }
+    .register-form form {
+        width: 100%;
+    }
+    .registro-space .terminos-registro {
+        display: none;
+    }
+    .author {
+        padding: 30px 0;
+    }
+    .clausulas {
+        display: block;
+    }
+    .clausulas .terminos-registro {
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .clausulas .terminos-registro div .check-box {
+        min-width: 20px;
+        max-width: 20px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .registro-space {
+        margin: 20px 0;
+    }
+    .confirmacion {
+        flex-direction: column;
+    }
+    .register-form .confirmacion {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .aceptar-condiciones {
+        margin: 20px 0;
+    }
+    .confirmacion #aceptar-register {
+        margin: auto;
+        width: 150px;
+    }
+    .author {
+        padding: 15px 0;
+    }
+}

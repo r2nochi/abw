@@ -1,0 +1,4 @@
+Addhandler cgi-script .py .pl .cgi
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://agentebitcoin.agenciaweb.pe/$1 [R,L]

@@ -1,0 +1,31 @@
+h1{
+    color: #127bf5;
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.mensaje-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+    width: 90%;
+}
+p{
+    text-align: center;
+}
+.mini{
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+/* responive */
+@media screen and (max-width: 450px) {
+
+h1{
+
+    font-size: 30px;
+}
+}

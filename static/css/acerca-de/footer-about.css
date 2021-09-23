@@ -1,0 +1,177 @@
+footer {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    clear: both;
+    padding: 6.5em 0;
+}
+
+.line {
+    border-left: 1px solid #e5e5e5;
+    height: 200px;
+}
+
+.about-footer {
+    width: 400px;
+}
+
+.about-footer .logo-footer {
+    width: 300px;
+}
+
+.about-footer p {
+    color: #fff;
+    font-family: Montserrat-medium;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto li {
+    list-style: none;
+}
+
+.contacto ul {
+    margin-bottom: 20px;
+}
+
+.contacto li {
+    margin: 10px 0;
+    font-style: 12px;
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminos a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat-medium;
+}
+
+.terminos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.horarios li {
+    list-style: none;
+    margin: 15px 0;
+    font-family: Montserrat-regular;
+}
+
+.head-li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.horarios .head-li p {
+    color: #FFF;
+}
+
+#tiny {
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.contacto .li-child,
+.horarios .li-child {
+    margin-left: 20px;
+}
+
+.horarios .li-child span {
+    margin-right: 20px;
+}
+
+
+/* RESPONSIVE */
+
+
+/* fOOTER */
+
+@media screen and (max-width: 1440px) {
+    .about-footer {
+        width: 300px;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        padding: 0 2em;
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+    .about-footer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacto ul,
+    .terminos ul,
+    .horarios ul {
+        padding: 0 10px;
+    }
+    .contacto {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        display: none;
+    }
+    .contacto,
+    .terminos {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .horarios {
+        width: 90%;
+    }
+    .terminos {
+        justify-content: start;
+    }
+    #tiny {
+        margin-left: 20px;
+    }
+    .contacto ul {
+        padding: 0;
+    }
+    .horario ul {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer .horarios {
+        width: 90%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,167 @@
+        @media screen and (max-width: 900px) {
+            .filtros-historial {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .filtros-historial ul {
+                justify-content: center;
+            }
+            .filtros-historial .filtro-select {
+                width: 200px;
+                align-self: flex-end;
+            }
+        }
+        
+        @media screen and (max-width: 830px) {
+            .lista-individual{
+                cursor: pointer;
+            }
+            .busqueda-historial .busqueda {
+                flex-direction: column;
+            }
+            .filtros-historial .filtro-select {
+                width: 200px;
+                align-self: center;
+            }
+            /* lista */
+            .drop-list-op {
+                display: block;
+                transition: 300ms ease all;
+                -webkit-transition: 300ms ease all;
+                -moz-transition: 300ms ease all;
+                -ms-transition: 300ms ease all;
+                -o-transition: 300ms ease all;
+            }
+            .lista-individual.active .drop-list-op{
+                transform: rotate(180deg);
+                transition: 300ms ease all;
+                -webkit-transition: 300ms ease all;
+                -moz-transition: 300ms ease all;
+                -ms-transition: 300ms ease all;
+                -o-transition: 300ms ease all;
+            }
+            .responsive-lista {
+                display: block;
+            }
+            .fecha-lista,
+            .monto-lista,
+            .estado-lista,
+            .comentario {
+                display: none;
+            }
+            .operaciones-list .lista .contenido-lista ul,
+            .operaciones-list .lista .titulo-lista ul {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            /* acordeon */
+            .lista-individual .drop-contenido{ 
+                display: block;
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+                transition: 500ms ease all;
+                -webkit-transition: 500ms ease all;
+                -moz-transition: 500ms ease all;
+                -ms-transition: 500ms ease all;
+                -o-transition: 500ms ease all;
+            }
+            .lista-individual.active{
+                background-color: #f0f0f0;
+            }
+            .lista-individual.active .drop-contenido{ 
+                height: 175px;
+                padding: 15px;
+                font-size: 18px;
+                background-color: #FFF;
+                transition: 500ms ease all;
+                -webkit-transition: 500ms ease all;
+                -moz-transition: 500ms ease all;
+                -ms-transition: 500ms ease all;
+                -o-transition: 500ms ease all;
+            }
+            /* Estilos contenido drop */
+            .info-drop-sup{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+            }
+            .info-drop-mid,
+            .info-drop-bottom{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .info-drop-sup div{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            .info-drop-mid{
+                margin: 30px 0;
+            }
+            .info-drop-bottom div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        @media screen and (max-width: 560px) {
+            .filtros-historial ul{
+                flex-wrap: wrap;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .busqueda-historial .cuadro-busqueda form input {
+                width: 130px;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .busqueda-historial .cuadro-busqueda form{
+                flex-direction: column;
+                gap: 5px;
+            }
+            .busqueda-historial .busqueda>div{
+                gap: 0;
+            }
+            .busqueda-historial .busqueda div img{
+                width: 25px;
+                align-self: flex-start;
+                margin-top: 5px;
+            }
+            .busqueda-historial .busqueda > div h2{
+                width: auto;
+                text-align: center;
+            }
+            .busqueda-historial .cuadro-busqueda form input {
+                width: 200px;
+            }
+            .lista-individual.active .drop-contenido {
+                padding: 5px;
+                font-size: 15px;
+                height: 145px;
+            }
+            .dato-drop{
+                font-size: 15px;
+            }
+            .info-drop-sup div{
+                gap: 3px
+            }
+            .info-drop-sup {
+                padding: 0;
+            }
+            .operaciones-list{
+                padding: 20px 5px;
+            }
+            .lista-individual.active {
+                padding: 10px 5px;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .historial{
+                width: 95%;
+            }
+        }

@@ -1,0 +1,91 @@
+    @media screen and (max-width: 950px) {
+        .line-separator {
+            border-bottom: 1px solid #e5e5e5;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .info-cuenta {
+            flex-direction: column;
+        }
+        .cuenta {
+            margin: 30px 0;
+        }
+        .opciones-cuenta {
+            display: none;
+        }
+        .opciones-cuenta-responsive {
+            display: flex;
+            gap: 20px;
+        }
+        .opciones-cuenta-responsive a {
+            text-decoration: none;
+            color: #4F647D;
+            border: 0.8px solid #8F8F8F;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 10px 30px;
+        }
+        .info-banco .banco .select-banco {
+            display: flex;
+            justify-content: center;
+        }
+        .info-banco .banco form div {
+            padding: 10px;
+            width: 350px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .info-banco .banco form div {
+            padding: 10px;
+        }
+        .cuenta h2 {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .info-banco .banco form div select {
+            margin: 0;
+        }
+        .cuenta {
+            padding: 20px 15px;
+        }
+        .info-banco .banco form div {
+            padding: 5px;
+        }
+        .info-titular .documento {
+            margin: 20px 0;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        .opciones-cuenta-responsive a {
+            padding: 10px 20px;
+        }
+        .cuenta {
+            padding: 20px 10px;
+        }
+        .info-banco .banco img {
+            display: none;
+        }
+        .info-titular .documento {
+            flex-direction: column;
+            gap: 20px
+        }
+        .nro-cuenta,
+        .tipo-moneda {
+            font-size: 14px
+        }
+        .info-banco .tipo-moneda .moneda {
+            margin-right: 75px;
+        }
+        .info-banco .banco form div {
+            padding: 10px 0;
+            width: 280px;
+        }
+        .info-banco .banco form div select {
+            font-size: 12px;
+            font-family: Montserrat-medium;
+        }
+    }

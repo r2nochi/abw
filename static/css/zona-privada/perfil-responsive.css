@@ -1,0 +1,139 @@
+/* Header */
+
+@media screen and (max-width: 1440px) {
+    .datos-principales div {
+        width: 200px;
+    }
+    .documentacion form {
+        flex-wrap: wrap;
+    }
+    .documentacion div {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .box-verify .celular,
+    .box-verify .email {
+        width: 100%;
+    }
+    .box-verify {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box-verify .email form input {
+        width: 100%;
+    }
+    .documentacion form {
+        flex-wrap: wrap;
+        row-gap: 50px;
+        margin: 80px 0;
+    }
+    .documentacion div {
+        width: 300px;
+    }
+    .direccion {
+        margin: 80px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .v-documento {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+        padding: 50px 30px;
+    }
+    .reverso,
+    .anverso,
+    .selfie {
+        width: 100%;
+    }
+    .selfie {
+        justify-content: center;
+    }
+    .v-documento .img-documento {
+        width: 300px;
+    }
+    .v-documento .img-selfie {
+        width: 200px;
+    }
+    .selfie .opciones-upload {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .direccion .prov-ciudad,
+    .direccion .distr-direc {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .direccion .prov-ciudad div,
+    .direccion .distr-direc div {
+        width: 100%;
+    }
+    .datos-principales form {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .datos-principales div {
+        width: 100%;
+    }
+    .documentacion div {
+        width: 100%;
+    }
+    .v-documento a {
+        font-size: 14px;
+    }
+    /* personas-pep */
+    .clausulas-pep {
+        padding: 20px 0;
+    }
+    .clausula-pep p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .verify-advance {
+        padding: 20px;
+    }
+    .box-verify .celular form {
+        flex-direction: column;
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+    }
+    .box-verify .email form {
+        padding: 20px;
+    }
+    .box-verify .celular form div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .v-documento a {
+        font-size: 14px;
+        padding: 5px;
+        width: 100px;
+    }
+    .v-documento .img-documento {
+        width: 250px;
+    }
+    .documentacion div #documento-verify {
+        width: 40px;
+    }
+    .v-documento .img-selfie {
+        width: 120px;
+    }
+    /* personas-pep */
+    .clausula-pep {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .clausula-pep p {
+        margin-bottom: 20px;
+    }
+}

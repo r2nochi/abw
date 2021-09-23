@@ -1,0 +1,154 @@
+.op-recargar {
+    width: 90%;
+    margin: auto;
+}
+
+.op-recargar .titulo-recargar {
+    padding: 20px 0;
+    border-bottom: 1px solid #FFCC7E;
+}
+
+.op-recargar h1 {
+    padding-left: 15px;
+    font-family: Montserrat-medium;
+    color: #127BF5;
+    font-size: 25px;
+}
+
+.cargar-saldo {
+    display: flex;
+    justify-content: space-between;
+    color: #4F647D;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Montserrat-medium;
+    margin-bottom: 20px;
+}
+
+.plataforma-dinero,
+.detalles-recarga {
+    width: 500px;
+    padding: 25px 20px;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.plataforma-dinero {
+    height: 320px;
+}
+
+.plataforma-dinero .plataforma {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.plataforma form select {
+    border: 0;
+}
+
+.plataforma-dinero .moneda-monto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.moneda-monto .moneda,
+.moneda-monto .monto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#moneda,
+#monto {
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+.cargar-saldo .cargar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cargar-saldo .cargar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #127BF5;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* detalles */
+
+.detalles-recarga-responsive {
+    display: none;
+}
+
+.detalles-recarga .detalles {
+    border-bottom: solid 1px #F0F0F0;
+}
+
+.detalles-recarga .detalle {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.detalles-recarga .detalle .dato {
+    font-family: Montserrat-regular;
+}
+
+.descripcion-detalle {
+    margin: 20px 0;
+}
+
+.descripcion-detalle h4 {
+    font-size: 20px;
+    color: #127BF5;
+}
+
+.descripcion-detalle p {
+    padding: 10px 0;
+    font-family: Montserrat-regular;
+}
+
+.aviso-detalles {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.aviso-detalles a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #8F8F8F;
+    color: #4F647D;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.aviso-detalles p {
+    text-align: center;
+    color: #FF7A00;
+}

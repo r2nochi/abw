@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimas Noticias Sobre el Bitcoin | Agente Bitcoin</title>
+    <meta name="description" content="Últimas noticias y novedades acerca del Bitcoin y otras criptomonedas. Enterate aqui en Agente Bitcoin. Compra y vende Bitcoins desde Perú." />
+    <meta name="keywords" content="" />
+    <meta name="geo.region" content="PE" />
+    <meta name="geo.placename" content="Lima" />
+    <meta name="DC.Language" scheme="RFC1766" content="Spanish" />
+    <meta name="DC.language" scheme="ISO639-1" content="es" />
+
+    <!-- OpenGraph -->
+    <!-- Facebook -->
+    <meta property="og:title" content="Noticias del Bitcoin | Agente Bitcoin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://agentebitcoin.agenciaweb.pe/images/social/04Noticias.jpg" />
+    <meta property="og:url" content="https://agentebitcoin.agenciaweb.pe/noticias.html"> 
+    <meta property="og:description" content="Últimas noticias y novedades acerca del Bitcoin y otras criptomonedas. Enterate aqui en Agente Bitcoin. Compra y vende Bitcoins desde Perú."> 
+    <!-- Twitter -->
+    <meta name=”twitter:title” content="Noticias del Bitcoin | Agente Bitcoin">
+    <meta name=”twitter:card” content="summary with large image">
+    <meta name="twitter:image" content="https://agentebitcoin.agenciaweb.pe/images/social/04Noticias.jpg">
+    <meta name="twitter:url" content="https://agentebitcoin.agenciaweb.pe/noticias.html">
+    <meta name="twitter:description" content="Últimas noticias y novedades acerca del Bitcoin y otras criptomonedas. Enterate aqui en Agente Bitcoin. Compra y vende Bitcoins desde Perú.">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <link rel="apple-touch-icon" sizes="72x72" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="shortcut icon" href="/images/favicon-agentebitcoin.png" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/global-style.css" />
+    <link rel="stylesheet" href="/css/landing-style.css" />
+    <link rel="stylesheet" href="/css/landing-responsive.css" />
+    <link rel="stylesheet" href="/css/noticias-blog.css" />
+
+    <!-- Script-FontAwesome -->
+
+    <script src="https://kit.fontawesome.com/660257203e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="/" title="Inicio"><img src="/images/logo-agentebitcoin.svg" alt="Logo Agente Bitcoin" /></a>
+            </div>
+
+
+
+            <nav class="botonera" id="botonera">
+
+                <ul class="navegation">
+                    <li><a href="/acercade" title="Acerca de Agente Bitcoin">Acerca de</a></li>
+                    <li><a href="/soporte" title="Soporte">Soporte</a></li>
+                    <li><a href="/noticias" class="selected" title="Noticias">Noticias</a></li>
+                </ul>
+
+
+
+                <ul class="register">
+                    <li><a href="#" id="login" title="Iniciar Sesión">Iniciar Sesión</a></li>
+                    <li>
+                        <a href="/registro" id="register" title="Registrarse">Registrarse</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+
+        </div>
+
+    </header>
+    <!-- POP UP DEL LOGIN -->
+
+    <div class="overlay" id="overlay">
+        <div class="popup-login" id="popup-login">
+            <a href="#" id="popup-close" title="Cerrar" class="popup-close">
+                <img src="/images/close.svg" alt="Cerrar" /></a>
+
+            <div class="form-login">
+                <form action="/login" method="POST">
+                    <h3>Iniciar Sesión</h3>
+                    <div class="datos-login-pop"> 
+                                    <div> 
+                                        <input class="email" type="email" id="correo-login" name="correo-login" placeholder="Correo Electrónico" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-correo"></p>
+                                    </div>
+                                    <div> 
+                                        <input class="password" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" />
+                                        <!-- Alerta validación -->
+                                        <p class="alert" style="display: none;" id="alert-contraseña"></p>
+                                    </div>
+                                </div>
+                    <div class="succes">
+                        <input type="submit" id="aceptar-login" name="aceptar-login" value="Entrar" />
+
+                        <a id="forget-password" href="#" title="Olvidé mi contraseña">Olvidé mi contraseña</a>
+                    </div>
+
+                    <div class="opciones-login">
+                        <a href="#" title="Inicia con Google"><img src="/images/login-google.png" alt="Google"/>Inicia con Google</a>
+
+                        <a href="#" title="Inicia con Facebook"><img src="/images/login-fb.png" alt="Facebook"/>Inicia con Facebook</a>
+                    </div>
+
+                    <div class="register-option">
+                        <div class="first">
+                            <p>¿No tienes cuenta?</p>
+
+                            <a href="/registro" title="Registrate Aquí">Registrate aquí</a>
+                        </div>
+
+                        <p class="mini">2021 Agencia Bitcoin</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Noticias -->
+
+
+
+    <section class="container-blog">
+        <ul>
+            <li><a href="/" title="Inicio">Inicio</a></li>
+            <li><a class="noline" href="#">></a></li>
+            <li><a class="noline" href="/noticias" title="Noticias">Noticias</a></li>
+        </ul>
+        <div class="noticias-blog">
+            <h1>Noticias</h1>
+            <div class="noticias-semana">
+            <rssapp-wall id="SlVLuVED89pboySv"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+               <!--  <h4>Noticias de esta semana</h4>
+                <div class="container-noticas-blog">
+                    <div class="noticia-semana">
+                        <img src="/images/noticia-img2.png" alt="noticia-img2">
+                        <div class="container-noticia">
+                            <div class="info-superior">
+                                <div class="titulo">
+                                    <h5>Lorem ipsum</h5>
+                                    <p>Publicado el 30/05/2021</p>
+                                </div>
+                                <div class="opciones">
+                                    <button><a href="#" title="leer-mas">Leer más</a></button>
+                                    <a href="#" title="compartir"><img src="/images/share.svg" alt="compartir"></a>
+                                </div>
+                            </div>
+                            <div class="texto-noticia">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> -->
+            </div>
+            
+            
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-image: url(/images/footer-banner.png)">
+        <div class="about-footer ">
+            <img class="logo-footer " src="/images/agentebitcoin.png" alt="Agente Bitcoin" />
+
+            <p>
+                Somos un conglomerado de agentes encargados de difundir y facilitar la Compra y Venta de criptomonedas en el Perú y Latinoamérica. Únete a nosotros y gana comisión en todas tus transacciones. Tu dinero está siempre protegido y las ganancias garantizadas.
+            </p>
+
+            <div class="iconos ">
+                <img src="/images/facebook.png" alt="Facebook" />
+
+                <img src="/images/twitter.png" alt="Twitter" />
+
+                <img src="/images/linkdin.png" alt="Linkdin" />
+
+                <img src="/images/youtube.png" alt="Youtube" />
+            </div>
+        </div>
+
+        <div class="contacto ">
+            <ul>
+                <li class="head-li ">
+                    <img src="/images/ic-celular.png " alt="Icono de celular"/>Contacto
+                </li>
+
+                <li class="li-child ">+51 998 308 759</li>
+
+                <li class="li-child ">+51 933 619 476</li>
+            </ul>
+
+            <ul>
+                <li class="head-li ">
+                    <img src="/images/ic-ubicación.png " alt="Icono de ubicación"/> Dirección
+                </li>
+
+                <li class="li-child ">Calle Cuarenta 190, San Isidro, Lima, Perú</li>
+            </ul>
+        </div>
+
+        <!-- Linea sepadadora -->
+
+        <div class="line "></div>
+
+        <!-- Linea sepadadora -->
+
+        <div class="terminos ">
+            <ul>
+                <li>
+                    <a href="/aviso-legal" title="Términos y condiciones">Términos y condiciones</a>
+                </li>
+
+                <li>
+                    <a href="/aviso-legal/politicas-de-privacidad" title="Políticas de privacidad">Políticas de privacidad</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Linea sepadadora -->
+
+  <div class="line"></div>
+
+  <!-- Linea sepadadora -->
+
+  <div class="horarios">
+    <ul>
+      <li class="head-li">
+        <img src="/images/ic-horarios.png " alt="Icono horario " />
+
+        <p>
+          Horario de <br />
+          Oficina
+        </p>
+      </li>
+
+      <li class="li-child "><span>L-V</span> 9am a 5pm</li>
+
+      <li class="li-child "><span>Sáb</span> 9am a 1pm</li>
+
+      <li id="tiny ">2021 Agente bitcoin</li>
+    </ul>
+  </div>
+</footer>
+    <!-- SCRIPTS -->
+    <script src="/js/app.js "></script>
+    <script>
+
+        
+    </script>
+
+
+    <!-- PHP -->
+    <?php include ("/php/validacion-login.php") ?>
+</body>
+
+</html>

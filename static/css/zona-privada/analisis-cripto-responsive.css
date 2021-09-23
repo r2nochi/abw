@@ -1,0 +1,101 @@
+        @media screen and (max-width: 1440px) {
+            .datos .grafico-btc,
+            .datos .compra-venta-btc {
+                width: 450px;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .datos {
+                flex-direction: column;
+                gap: 50px;
+            }
+            .datos .grafico-btc {
+                flex-direction: row;
+                gap: 30px;
+            }
+            .datos .grafico-btc,
+            .datos .compra-venta-btc {
+                width: 100%;
+            }
+            .select-compra-venta ul li a {
+                text-decoration: none;
+                padding: 10px 40px;
+            }
+            .moneda p {
+                font-size: 20px;
+            }
+            .moneda .divisa div form select {
+                font-size: 20px;
+            }
+            .moneda .divisa {
+                padding: 20px 50px;
+            }
+            .moneda .btc {
+                padding: 20px 60px;
+            }
+            /* cupon */
+            .cupon form div {
+                width: 300px;
+                padding: 10px 30px;
+            }
+            .compra-venta-btc .saldo-billetera .saldo-divisa,
+            .compra-venta-btc .saldo-billetera .saldo-btc {
+                padding: 10px 30px;
+            }
+            .compra-venta-btc .saldo-billetera .saldo-divisa p,
+            .compra-venta-btc .saldo-billetera .saldo-btc p {
+                font-size: 18px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .datos .grafico-btc {
+                flex-direction: column;
+            }
+            .moneda .divisa {
+                padding: 20px 30px;
+            }
+            .moneda .btc {
+                padding: 20px 40px;
+            }
+            .compra-venta-btc .saldo-billetera .saldo-divisa,
+            .compra-venta-btc .saldo-billetera .saldo-btc {
+                padding: 10px 20px;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .select-compra-venta ul li a {
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+            .compra-venta-btc .saldo-billetera .saldo-divisa,
+            .compra-venta-btc .saldo-billetera .saldo-btc {
+                padding: 10px;
+            }
+            .compra-venta-btc .saldo-billetera .saldo-divisa p,
+            .compra-venta-btc .saldo-billetera .saldo-btc p {
+                font-size: 14px;
+            }
+            .moneda p {
+                font-size: 18px;
+            }
+            .moneda .divisa {
+                padding: 5px;
+            }
+            .moneda .btc {
+                padding: 15px 27px;
+            }
+            .compra-venta-btc .monto .monto-divisa,
+            .compra-venta-btc .monto .monto-btc {
+                padding: 20px;
+            }
+            .cupon form div {
+                width: 250px;
+                padding: 10px;
+            }
+            .barra {
+                width: 100%;
+            }
+        }

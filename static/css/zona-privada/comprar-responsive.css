@@ -1,0 +1,74 @@
+@media screen and (max-width: 1440px) {
+    .precio-act,
+    .detalles {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .precio-act,
+    .detalles {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* ocultar el bloque detalles */
+    .detalles {
+        display: none;
+    }
+    .content-precio .detalles-responsive {
+        display: block;
+        color: #4F647D;
+    }
+    .detalles-responsive .titulo-detalles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-precio .detalles-responsive .garantia {
+        display: block;
+    }
+
+    .precio-act,
+    .detalles {
+        width: 80%;
+        margin: auto;
+    }
+    .precio-act .start-operacion-2 a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .precio-act,
+    .detalles {
+        width: 90%;
+        margin: auto;
+    }
+    .conversion-dinero div {
+        font-size: 16px;
+    }
+    .box-comprar {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .precio-act,
+    .detalles {
+        width: 100%;
+        padding: 15px;
+    }
+    .content-detalles .detalle p {
+        font-size: 14px;
+    }
+    .content-detalles .detalle .dato {
+        font-size: 14px;
+    }
+    .garantia {
+        font-size: 14px;
+    }
+}

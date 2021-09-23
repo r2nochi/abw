@@ -1,0 +1,308 @@
+.op-comprar {
+    width: 90%;
+    margin: auto;
+}
+
+.op-comprar .titulo-comprar {
+    padding: 20px 0;
+    border-bottom: 1px solid #FFCC7E;
+}
+
+.op-comprar h1 {
+    font-family: Montserrat-medium;
+    color: #127BF5;
+    font-size: 25px;
+}
+
+.box-comprar {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.cuadro-conversion {
+    display: flex;
+}
+
+.op-comprar h2 {
+    font-family: Montserrat-medium;
+    color: #127BF5;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.usar-saldo {
+    display: flex;
+    gap: 10px
+}
+.usar-saldo p {
+    color: #4F647D;
+}
+.cargar-saldo {
+    display: flex;
+    justify-content: center;
+}
+
+.cargar-saldo a {
+    text-decoration: none;
+    padding: 10px;
+    color: #4F647D;
+    border: 1px solid #4F647D;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* precio-act */
+
+.precio-act,
+.detalles {
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 500px;
+}
+
+.content-precio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content-precio h3 {
+    text-align: center;
+    font-size: Montserrat-light;
+    font-weight: 300;
+    color: #4F647D;
+    font-size: 30px;
+}
+
+.cuadro-conversion {
+    display: flex;
+    justify-content: center;
+}
+
+.cuadro-conversion div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+}
+
+.cuadro-conversion .bitcoin-conver {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.cuadro-conversion .bitcoin-conver p {
+    margin-right: 15px;
+    color: #4F647D;
+}
+.cuadro-conversion .moneda-conver .moneda-select select{
+    color: #4F647D;
+    font-size: 16px;
+}
+.cuadro-conversion .moneda-conver {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cuadro-conversion div .img-conversion {
+    border: 0;
+}
+
+.cuadro-conversion div .img-conversion img {
+    width: 30px;
+}
+
+.cuadro-conversion select {
+    border: 0;
+    background-color: #FFF;
+}
+
+/* SELECT */
+.moneda-conver .moneda-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+.moneda-conver .moneda-select {
+    max-width: 200px;
+    position: relative;
+    padding: 0;
+    border: 0;
+}
+
+.moneda-conver .moneda-select select {
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: Montserrat-regular;
+    /* a */
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 10px;
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: #4F647D;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.moneda-conver .moneda-select select option {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Montserrat-regular;
+}
+
+.moneda-conver .moneda-select select::-ms-expand {
+    display: none;
+}
+
+.moneda-conver .moneda-select select option:hover {
+    background: #127bf5;
+}
+
+select>option {
+    background-color: #FFF;
+}
+/* --- */
+.content-precio .vender-todo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.conversion-dinero {
+    display: flex;
+    justify-content: center;
+}
+
+.conversion-dinero div {
+    padding: 15px 20px;
+    border: 1px solid #EBEBEB;
+    font-size: Montserrat-regular;
+    color: #4F647D;
+    font-size: 20px;
+}
+
+.conversion-dinero .btc {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.conversion-dinero .divisa {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cupon {
+    display: flex;
+    justify-content: center;
+}
+
+.cupon div {
+    color: #83A9D7;
+    display: flex;
+    gap: 10px;
+    background-color: #F0F7FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cupon input {
+    background-color: #F0F7FF;
+    width: 200px;
+    border: 0;
+}
+
+.content-precio div {
+    display: flex;
+    justify-content: center;
+}
+
+.precio-act .start-operacion,
+.precio-act .start-operacion-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.precio-act .start-operacion a,
+.precio-act .start-operacion-2 a {
+    color: #FFF;
+    text-decoration: none;
+    background: #127BF5;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.precio-act .start-operacion a {
+    display: none;
+}
+
+
+/* DETALLES */
+
+.content-precio .detalles-responsive {
+    display: none;
+}
+
+.detalles {
+    color: #4F647D;
+}
+
+.detalles .titulo-detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-detalles {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.content-detalles .detalle {
+    display: flex;
+    justify-content: space-between;
+}
+
+#monto-detalle {
+    background-color: #127BF5;
+    color: #FFF;
+}
+
+.content-detalles .detalle .dato {
+    font-family: Montserrat-regular;
+}
+
+
+/* garantia */
+
+.garantia p {
+    margin-bottom: 15px;
+}
+
+.garantia p span {
+    color: #127BF5;
+}

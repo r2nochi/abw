@@ -1,0 +1,263 @@
+.container-soporte {
+    width: 85%;
+    margin: auto;
+}
+
+.navegation li .selected {
+    color: #127bf5;
+}
+
+.container-soporte>ul {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+
+.container-soporte ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.container-soporte ul a {
+    color: #909090;
+    font-family: Montserrat-regular;
+    font-size: 18px;
+}
+
+.container-soporte ul .noline {
+    text-decoration: none;
+}
+
+.soporte h1 {
+    font-size: 43px;
+    color: #26378e;
+    margin: 30px 0;
+}
+
+
+/* Soporte-contacto */
+
+.contacto-soporte {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.contacto-soporte .map iframe {
+    width: 600px;
+    height: 550px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.formulario-soporte h4 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-size: Cabin-semibold;
+    color: #127bf5;
+}
+
+.formulario-soporte .names {
+    display: flex;
+    gap: 50px;
+}
+
+.formulario-soporte .mail-phone {
+    display: flex;
+    gap: 50px;
+}
+
+.formulario-soporte {
+    width: 600px;
+}
+
+label {
+    display: block;
+    color: #4f647d;
+    font-family: Montserrat-medium;
+    margin-bottom: 10px;
+}
+
+.formulario-soporte input {
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 14px;
+    font-family: Montserrat-regular;
+}
+
+.formulario-soporte form {
+    width: 100%;
+}
+
+.formulario-soporte .names,
+.formulario-soporte .mail-phone {
+    width: 100%;
+}
+
+.formulario-soporte .names div,
+.formulario-soporte .mail-phone div {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.formulario-soporte textarea {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+}
+
+#enviar-mensaje {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: linear-gradient(26.7deg, #26378e 7.77%, #127bf5 81.36%);
+    opacity: 0.8;
+    border-radius: 5px;
+    color: white;
+    font-family: Cabin-semibold;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.info-contacto-soporte {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.telefono-soporte p,
+.horarios-soporte p {
+    font-size: 24px;
+    color: #4f647d;
+    font-family: Cabin-medium;
+}
+
+.horarios-soporte .li-child,
+.telefono-soporte .li-child {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: Montserrat-regular;
+    font-size: 20px;
+    color: #4f647d;
+}
+
+.telefono-soporte .li-child span {
+    margin-right: 20px;
+}
+
+.horarios-soporte .li-child span {
+    margin-right: 20px;
+}
+
+.line-soporte {
+    border-left: 1px solid #c4c4c4;
+    height: 150px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1440px) {
+    .contacto-soporte .map iframe {
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .formulario-soporte {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .contacto-soporte {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .contacto-soporte .map {
+        width: 100%;
+    }
+    .contacto-soporte .map iframe {
+        width: 100%;
+        height: 600px;
+    }
+    .formulario-soporte {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .formulario-soporte form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-soporte {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* botonera */
+    .navegation .selected {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+    /* Formulario */
+    .formulario-soporte .names div input,
+    .formulario-soporte .mail-phone div input {
+        width: 100%;
+    }
+    .formulario-soporte .names,
+    .formulario-soporte .mail-phone {
+        display: block;
+    }
+    .formulario .names div input,
+    .formulario .mail-phone div input {
+        width: 100%;
+    }
+    /* MAPA */
+    .contacto-soporte .map iframe {
+        height: 400px;
+    }
+    .telefono-soporte p,
+    .horarios-soporte p {
+        font-size: 20px;
+    }
+    .telefono-soporte .li-child,
+    .horarios-soporte .li-child {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Info-contacto-soporte */
+    .info-contacto-soporte {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .line-soporte {
+        display: none;
+    }
+    .telefono-soporte p,
+    .horarios-soporte p {
+        font-size: 24px;
+    }
+    .telefono-soporte .li-child,
+    .horarios-soporte .li-child {
+        font-size: 25px;
+    }
+    .contacto-soporte .map iframe {
+        height: 350px;
+    }
+}

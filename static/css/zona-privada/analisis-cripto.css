@@ -1,0 +1,291 @@
+.analisis {
+    width: 90%;
+    margin: auto;
+}
+
+.analisis .titulo-analisis {
+    padding: 20px 0;
+    border-bottom: 1px solid #ffcc7e;
+}
+
+.analisis h1 {
+    font-family: Montserrat-medium;
+    color: #127bf5;
+    font-size: 25px;
+}
+
+.datos-analisis {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.datos-analisis .datos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.datos .stadisticas-btc {
+    width: 100%;
+}
+
+.datos .grafico-btc {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datos .grafico-btc img {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.datos .compra-venta-btc {
+    width: 45%;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    color: #4f647d;
+}
+
+.select-compra-venta ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.select-compra-venta ul li {
+    list-style: none;
+}
+
+.select-compra-venta ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    color: #4f647d;
+    display: inline-block;
+}
+
+.select-compra-venta ul li .select-a {
+    border: 1px solid #127bf5;
+    color: #127bf5;
+}
+
+.compra-venta-btc .moneda {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.moneda .divisa,
+.moneda .btc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.moneda .divisa img {
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.moneda .divisa div form select {
+    border: 0;
+    color: #4f647d;
+    background-color: #ffffff;
+}
+
+.moneda .divisa div form select option {
+    border: 0;
+    color: #4f647d;
+    background-color: #ffffff;
+}
+
+.moneda .divisa {
+    border: 1px solid #ebebeb;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+/* SELECT DIVISA */
+/* SELECT */
+.divisa .divisa-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+.divisa .divisa-select {
+    max-width: 200px;
+    position: relative;
+    padding: 0;
+    border: 0;
+}
+
+.divisa .divisa-select select {
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: Montserrat-regular;
+    font-size: 16px;
+    /* a */
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 10px;
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: #4F647D;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.divisa .divisa-select select option {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Montserrat-regular;
+}
+
+.divisa .divisa-select select::-ms-expand {
+    display: none;
+}
+
+.divisa .divisa-select select option:hover {
+    background: #127bf5;
+}
+
+.divisa-select select>option {
+    background-color: #FFF;
+}
+/*  */
+.moneda .btc {
+    border: 1px solid #ebebeb;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px 40px;
+}
+
+.moneda .btc img {
+    width: 25px;
+}
+
+.barra {
+    display: block;
+    margin: 20px auto;
+}
+
+.compra-venta-btc .saldo-billetera {
+    display: flex;
+    justify-content: center;
+}
+
+.compra-venta-btc .saldo-billetera .saldo-divisa {
+    padding: 10px 15px;
+    border: 1px solid #ebebeb;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+.compra-venta-btc .saldo-billetera .saldo-btc {
+    padding: 10px 15px;
+    border: 1px solid #ebebeb;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.compra-venta-btc .monto {
+    display: flex;
+    justify-content: center;
+}
+
+.compra-venta-btc .monto .monto-divisa {
+    padding: 20px 30px;
+    border: 1px solid #ebebeb;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.compra-venta-btc .monto .monto-btc {
+    padding: 20px 30px;
+    border: 1px solid #ebebeb;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Cupon */
+
+.cupon form div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background: #f0f7ff;
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.cupon form div input {
+    background: #f0f7ff;
+    width: 250px;
+    border: 0;
+    color: #83a9d7;
+    padding: 5px;
+}
+
+.check-opciones {
+    display: flex;
+    justify-content: center;
+}
+
+.check-opciones form div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.check-opciones .cargar-saldo {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.check-opciones .cargar-saldo a {
+    text-decoration: none;
+    color: #4f647d;
+    padding: 7px;
+    border: 1px solid #4f647d;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.comprar {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.comprar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: #127bf5;
+    border-radius: 5px;
+    display: inline-block;
+}
